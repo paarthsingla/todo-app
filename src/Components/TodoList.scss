@@ -28,6 +28,9 @@
             background-color: lightgreen;
             border-radius: 10px;
             cursor: pointer;
+            &:hover {
+                background-color: rgb(26, 168, 26);
+            }
         }
     }
     .chartButton button {
@@ -37,9 +40,12 @@
         padding: 0 12px;
         border: none;
         color: white;
-        background-color: #bed5ff;
+        background-color: #518eff;
         border-radius: 10px;
         cursor: pointer;
+        &:hover {
+            background-color: #094bc7;
+        }
     }
 }
 
