@@ -1,0 +1,60 @@
+.task {
+    width: 20vw;
+    min-width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    overflow: hidden;
+    .text-edit {
+        display: block;
+        min-height: 100px;
+        width: 100%;
+        text-align: center;
+        border: none;
+        &:focus {
+            outline: none;
+            background-color: rgb(239, 248, 255);
+        }
+    }
+    .text-pending {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdfcb2;
+    }
+    .text-completed {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c1fdb2;
+    }
+    .actions {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            padding: 5px 10px;
+            font-size: larger;
+            border: none;
+            cursor: pointer;
+            background-color: inherit;
+        }
+
+        .done {
+            color: palegreen;
+            &:hover { color: green; }
+        }
+
+        .edit {
+            color: lightgray;
+            &:hover { color: gray; }
+        }
+
+        .del {
+            color: pink;
+            &:hover { color: red; }
+        }
+    }
+}
